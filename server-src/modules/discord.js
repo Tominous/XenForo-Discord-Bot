@@ -44,7 +44,7 @@ module.exports = {
                 Client.deleteChannel(channel, callback);
             }), function(err){
                 if(err){
-                    //Log.error('system','Discord','Failed to delete some channels',err);
+                    Log.error('system','Discord','Failed to delete some channels',err);
                 }
             });
 
@@ -143,7 +143,7 @@ module.exports = {
             });
 
             // TODO: Run through users and ensure they have correct roles
-            //console.log('users',Client.users);
+            console.log('users',Client.users);
             Client.sendMessage(Channel, 'Bot connected and ready', false, function(err){
                 if(err){
                     console.error('message failed',err)
