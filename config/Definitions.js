@@ -21,7 +21,7 @@ module.exports = {
         },
         {
             name: 'moderators',
-            topic: 'Moderator & Admin only chat',
+            topic: 'Moderator & Administrator only chat',
             type: 'text',
             minLevel: 500
         },
@@ -41,30 +41,31 @@ module.exports = {
             position: -1,
             permissions:{
                 // general
-                createInstantInvite:false,
-                kickMembers: false,
-                banMembers: false,
-                manageRoles: false,
-                managePermissions: false,
-                manageChannels: false,
-                manageChannel: false,
-                manageServer: false,
+                administrator:true,
+                createInstantInvite:true,
+                kickMembers: true,
+                banMembers: true,
+                manageRoles: true,
+                managePermissions: true,
+                manageChannels: true,
+                manageChannel: true,
+                manageServer: true,
                 // text
                 readMessages: true,
                 sendMessages: true,
-                sendTTSMessages: false,
-                manageMessages: false,
-                embedLinks: false,
-                attachFiles: false,
+                sendTTSMessages: true,
+                manageMessages: true,
+                embedLinks: true,
+                attachFiles: true,
                 readMessageHistory: true,
-                mentionEveryone: false,
+                mentionEveryone: true,
                 // voice
-                voiceConnect: false,
-                voiceSpeak: false,
-                voiceMuteMembers: false,
-                voiceDeafenMembers: false,
-                voiceMoveMembers: false,
-                voiceUseVAD: false
+                voiceConnect: true,
+                voiceSpeak: true,
+                voiceMuteMembers: true,
+                voiceDeafenMembers: true,
+                voiceMoveMembers: true,
+                voiceUseVAD: true
             }
         },
         {
